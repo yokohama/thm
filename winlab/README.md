@@ -1,6 +1,7 @@
 ### 開発環境
 ```
-$ sudo apt update\nsudo apt install mingw-w64
+$ sudo apt update
+$ sudo apt install mingw-w64
 ```
 
 ### コンパイル
