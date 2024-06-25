@@ -88,6 +88,9 @@ $ msfvenom -a x64 --platform windows -p windows/x64/exec cmd=calc.exe -f raw -o 
 
 2. やられ役のWindows上で、hoge.exeを実行
 
+![image](https://github.com/yokohama/thm/assets/1023421/f99c50cc-3053-43c8-ace7-9f04628b1c11)
+
+
 
 ### パターン2: リバースシェル(ステージャー型)
 
