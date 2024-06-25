@@ -66,7 +66,7 @@ AntivirusSignatureLastUpdated
 
 #### ステージャーの作成
 
-それぞれ、`mfsvenom`でペイロードを作成して、webサーバーに設置。共通のステージャー(hoge.cs)を使用する。
+それぞれ、`mfsvenom`でペイロードを作成して、webサーバーに設置。共通のステージャー([hoge.cs](https://github.com/yokohama/thm/blob/main/avevasionshellcode/task7/hoge.cs))を使用する。
 1. hoge.csを作成
 2. Windows上でコンパイル
 ```
