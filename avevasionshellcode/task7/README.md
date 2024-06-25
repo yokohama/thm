@@ -121,9 +121,16 @@ $ nc -lvp 7474
 今回は会社名を加工したい。[こちら](https://github.com/yokohama/thm/blob/main/avevasionshellcode/task7/hoge.rc)を参照。
 
 2. RCファイルをRES(リソース(バイナリ))ファイルに変換
-
-RCファイルをリソースコンパイラ (rc.exe) を使用して .res ファイルに変換する。RESファイルは、バイナリ形式のリソースデータを含むファイルで、アプリケーションの実行ファイルに組み込むためのリソース情報を格納する。
+- RCファイルをリソースコンパイラ (rc.exe) を使用して .res ファイルに変換する。RESファイルは、バイナリ形式のリソースデータを含むファイルで、アプリケーションの実行ファイルに組み込むためのリソース情報を格納する。
+- いろいろ `\i` で、インクルードしないと実行できなかった。
+```
+>"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe" /i"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um" /i"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared" /fo"hoge.res" "hoge.rc"
+```
 
 3. RESファイルを使用してCSファイルをコンパイルし、EXEファイルを作成
 
-C# コンパイラ (csc.exe) を使用して、.cs ファイルと .res ファイルから実行可能ファイル .exe を生成します。このステップでは、リソースファイルが実行ファイルに組み込まれ、最終的な製品に会社名やその他の情報を含めることができる。
+- C# コンパイラ (csc.exe) を使用して、.cs ファイルと .res ファイルから実行可能ファイル .exe を生成。このステップでは、リソースファイルが実行ファイルに組み込まれ、最終的な製品に会社名やその他の情報を含めることができる。
+```
+>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:hoge.exe /win32res:hoge.res hoge.cs
+```
+
