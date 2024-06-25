@@ -22,7 +22,7 @@ localhost.pemが作成される。
 
 5. webサーバーの起動
 
-THMのサンプルコードは、`wrap_socket`関数を使用しており、Python3.10以降では非推奨かつ削除されるので、書き直した。`hoge.py`
+THMのサンプルコードは、`wrap_socket`関数を使用しており、Python3.10以降では非推奨かつ削除されるので、書き直した。[hoge.py](https://github.com/yokohama/thm/blob/main/avevasionshellcode/task6/hoge.py)
 
 ```
 $ python hoge.py
