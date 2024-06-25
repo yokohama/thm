@@ -118,7 +118,7 @@ $ nc -lvp 7474
 
 1. RC(リソース・スクリプト(テキスト))_ファイルの作成
 
-今回は会社名を加工したい。
+今回は会社名を加工したい。[こちら](https://github.com/yokohama/thm/blob/main/avevasionshellcode/task7/hoge.rc)を参照。
 
 2. RCファイルをRES(リソース(バイナリ))ファイルに変換
 
